@@ -1,5 +1,4 @@
-using MATLAB, MAT, JLD2, IntervalLinearAlgebra, FileIO, SparseArrays
-using RadiiPolynomial, IntervalArithmetic, LinearAlgebra ; Interval(1)*Interval(1)
+using JLD2, IntervalLinearAlgebra, RadiiPolynomial, IntervalArithmetic, LinearAlgebra
 
 
 function trace(N,p)
