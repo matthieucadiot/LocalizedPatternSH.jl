@@ -1,8 +1,4 @@
-# LocalizedPatternSH
-Julia code for computer-assisted proofs of localized patterns in the Swift-Hohenberg PDE
-
-
-# Computer-assisted proofs of solitons, eigencouples and orbital stability in the Kawahara equation.
+# Computer-assisted proofs of localized patterns and branches of periodic solutions in the Swift-Hohenberg PDE.
 
 
 
@@ -24,18 +20,18 @@ Table of contents:
 
 This Julia code is a complement to the article 
 
-#### [[1]](https://arxiv.org/abs/2302.12877) : "Rigorous computation of solutions of semi-linear PDEs on unbounded domains via spectral methods", M. Cadiot, J-P. Lessard and J-C. Nave, [ArXiv Link](https://arxiv.org/abs/2302.12877)
+#### [[1]](https://arxiv.org/abs/2302.12877) : "Stationary non-radial localized patterns in the planar Swift-Hohenberg PDE: constructive proofs of existence", M. Cadiot, J-P. Lessard and J-C. Nave, [ArXiv Link](https://arxiv.org/abs/2302.12877)
 
-as it provides the necessary rigorous computations that are needed in Section 6. The rigorous computations are performed using the package [IntervalArithmetic](https://github.com/JuliaIntervals/IntervalArithmetic.jl). The mathematical objects (spaces, sequences, operators,...) are built using the package [RadiiPolynomial](https://github.com/OlivierHnt/RadiiPolynomial.jl). 
+as it provides the necessary rigorous computations that are needed along the paper. The rigorous computations are performed using the package [IntervalArithmetic](https://github.com/JuliaIntervals/IntervalArithmetic.jl). The mathematical objects (spaces, sequences, operators,...) are built using the package [RadiiPolynomial](https://github.com/OlivierHnt/RadiiPolynomial.jl). 
 
 
-# The Kawahara equation
+# The Swift-Hohenberg equation
 
-The Kawahara equation
-$$\lambda_2u'''' + \lambda_1u'' + u + \lambda_3u^2 = 0$$
-is known to have solutions on $\mathbb{R}$ that decay to zero at infinity. These solutions are called solitary waves or soliton (see [[1]](https://arxiv.org/abs/2302.12877) for a complete description).
+The Swift-Hohenberg equation
+$$(I_d+\Delta)^2u +  \mu u + \nu_1 u^2 + \nu_2 u^3 =0$$
+is known to have localized solutions on $\mathbb{R}^2$ that vanish at infinity. These solutions are called localized patterns (see [[1]](https://arxiv.org/abs/2302.12877) for a complete description). 
 
-## Proof of solitons
+## Proof of a branch of periodic solutions limiting a localized pattern
 
 The present code provides the rigorous numerics for the proof of solitons of the Kawahara equation using the analysis of [[1]](https://arxiv.org/abs/2302.12877) (specifically the Section 6). The user can choose, line 355 of the code, the values for N, d, T and c, that are described in [[1]](https://arxiv.org/abs/2302.12877). In particular, T and c need to be chosen such that
  - $0 \leq T < 0.397$ 
