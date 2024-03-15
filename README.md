@@ -6,10 +6,8 @@ Table of contents:
 
 
 * [Introduction](#introduction)
-* [The Kawahara equation](#the-kawahara-equation)
-   * [Proof of solitons](#Proof-of-solitons)
-   * [Proof of the first 3 eigencouples](#Proof-of-the-first-3-eigencouples)
-   * [Proof of orbital stability](#Proof-of-orbital-stability)
+* [The Swift Hohenberg equation](#the-swift-hohenberg-equation)
+   * [Proof of a branch of periodic solutions limiting a localized pattern](#proof-of-a-branch-of-periodic-solutions-limiting-a-localized-pattern)
 * [Utilisation and References](#utilisation-and-references)
 * [License and Citation](#license-and-citation)
 * [Contact](#contact)
@@ -70,7 +68,7 @@ If you wish to use this code in your publication, research, teaching, or other a
   doi = {10.5281/zenodo.7656856}
 }
 ```
-DOI : [10.5281/zenodo.7656856](https://zenodo.org/record/7656856#.Y_NqJ0NKhPZ) 
+DOI : [10.5281/zenodo.7656856](https://doi.org/10.5281/zenodo.10823084) 
 
 
 # Contact
