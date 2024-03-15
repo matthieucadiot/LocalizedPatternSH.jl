@@ -50,8 +50,9 @@ such that $\tilde{u}(q)$ is a periodic solution to the Swift-Hohenberg PDE with 
  - [RadiiPolynomial](https://github.com/OlivierHnt/RadiiPolynomial.jl) 
  - [IntervalArithmetic](https://github.com/JuliaIntervals/IntervalArithmetic.jl)
  - [LinearAlgebra](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/)
+ - [IntervalLinearAlgebra](https://github.com/JuliaIntervals/IntervalLinearAlgebra.jl)
+ - [JLD2](https://github.com/JuliaIO/JLD2.jl)
  
- You will need to install these packages. After that, you should be able to run the code normally.
  
  # License and Citation
  
