@@ -38,9 +38,7 @@ In Section 3.6 in [[1]](https://arxiv.org/abs/2302.12877), we prove that, under 
 We provide as well candidate solutions for the proofs, which are given in the files .jld2. These correspond to the sequence U0 in Section 3.1 representing the approximate solution u0. In particular, $U_0$ has already been projected in the set of sequences representing trace zero functions (see Section 3.1). Consequently, the Fourier series associated to $U_0$ represents a smooth function on $\mathbb{R}^2$ with compact support on a square.
 
 Given these approximate solution, each code proof_Dj_pattern.jl provides the explicit computation of the bounds in Theorem 3.7 and provides a value for $r$ is the proof is successful. In particular, the theorem states that there exists a smooth curve 
-$$
-\left\{\tilde{u}(q) : q \in [d,\infty]\right\} \subset C^\infty(\mathbb{R}^2)
-$$
+$$\left\{\tilde{u}(q) : q \in [d,\infty]\right\} \subset C^\infty(\mathbb{R}^2)$$
 such that $\tilde{u}(q)$ is a periodic solution to the Swift-Hohenberg PDE with period $2q$ in both variables.  In particular, $\tilde{u}(\infty)$ is a localized pattern on $\mathbb{R}^2.$ Finally, the value of $r$ provides a uniform control on the branch of periodic solutions, making the proof constructive.
 
  
