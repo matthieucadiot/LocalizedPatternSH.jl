@@ -18,9 +18,9 @@ Table of contents:
 
 This Julia code is a complement to the article 
 
-#### [[1]](https://arxiv.org/abs/2302.12877) : "Stationary non-radial localized patterns in the planar Swift-Hohenberg PDE: constructive proofs of existence", M. Cadiot, J-P. Lessard and J-C. Nave, [ArXiv Link](https://arxiv.org/abs/2302.12877)
+#### [[1]](https://arxiv.org/abs/2403.10450) : "Stationary non-radial localized patterns in the planar Swift-Hohenberg PDE: constructive proofs of existence", M. Cadiot, J-P. Lessard and J-C. Nave, [ArXiv Link](https://arxiv.org/abs/2403.10450).
 
-as it provides the necessary rigorous computations that are needed along the paper. The rigorous computations are performed using the package [IntervalArithmetic](https://github.com/JuliaIntervals/IntervalArithmetic.jl). The mathematical objects (spaces, sequences, operators,...) are built using the package [RadiiPolynomial](https://github.com/OlivierHnt/RadiiPolynomial.jl). 
+It provides the necessary rigorous computations of the bounds presented along the paper. The computations are performed using the package [IntervalArithmetic](https://github.com/JuliaIntervals/IntervalArithmetic.jl). The mathematical objects (spaces, sequences, operators,...) are built using the package [RadiiPolynomial](https://github.com/OlivierHnt/RadiiPolynomial.jl). 
 
 
 # The Swift-Hohenberg equation
@@ -31,7 +31,7 @@ is known to have localized solutions on $\mathbb{R}^2$ that vanish at infinity. 
 
 ## Proof of a branch of periodic solutions limiting a localized pattern
 
-In Section 3.6 in [[1]](https://arxiv.org/abs/2302.12877), we prove that, under the condition (67) in Theorem 3.7, localized patterns can be proven to be the limit of a branch of (spatially) periodic solutions as the period tends to infinity. In particular this condition involves the explicit computation of multiple bounds, which is achieved in the present code. Moreover, we verify that condition (67) is verified for 3 different localized patterns and we obtain a constructive proof of existence of a branch of periodic solutions limiting the localized pattern. These 3 patterns possess different visual symmetries : a square symmetry (associated to the group D4), an hexagonal symmetry (D6) and an octogonal symmetry (D8). The symmetries are not proven but simply indicative. In particular, each code proof_Dj_pattern.jl allows to demonstrate the branch of periodic solutions and the localized pattern associated. 
+In Section 3.6 in [[1]](https://arxiv.org/abs/2403.10450), we prove that, under the condition (67) in Theorem 3.7, localized patterns can be proven to be the limit of a branch of (spatially) periodic solutions as the period tends to infinity. In particular this condition involves the explicit computation of multiple bounds, which is achieved in the present code. Moreover, we verify that condition (67) is verified for 3 different localized patterns and we obtain a constructive proof of existence of a branch of periodic solutions limiting the localized pattern. These 3 patterns possess different visual symmetries : a square symmetry (associated to the group D4), an hexagonal symmetry (D6) and an octogonal symmetry (D8). The symmetries are not proven but simply indicative. In particular, each code proof_Dj_pattern.jl allows to demonstrate the branch of periodic solutions and the localized pattern associated. 
 
 We provide as well candidate solutions for the proofs, which are given in the files .jld2. These correspond to the sequence U0 in Section 3.1 representing the approximate solution u0. In particular, $U_0$ has already been projected in the set of sequences representing trace zero functions (see Section 3.1). Consequently, the Fourier series associated to $U_0$ represents a smooth function on $\mathbb{R}^2$ with compact support on a square.
 
@@ -59,7 +59,7 @@ This code is available as open source under the terms of the [MIT License](http:
 If you wish to use this code in your publication, research, teaching, or other activities, please cite it using the following BibTeX template:
 
 ```
-@software{ProofKawahara.jl,
+@software{LocalizedPatternSH.jl,
   author = {Matthieu Cadiot},
   title  = {LocalizedPatternSH.jl},
   url    = {https://github.com/matthieucadiot/LocalizedPatternSH.jl},
